@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "AngularCRUD",
+      "public": "dist/AngularCRUD",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

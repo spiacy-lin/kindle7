@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angularcrud-eacf7": {
+      "hosting": {
+        "AngularCRUD": [
+          "angularcrud-eacf7"
+        ]
+      }
+    }
+  }
+}

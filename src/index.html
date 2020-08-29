@@ -6,8 +6,33 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/fc8a02aa1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <app-root></app-root>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyABUxNfMaGOuJG4b4f5tVFy9ZAlCOgL778",
+    authDomain: "fireandrzej-7133a.firebaseapp.com",
+    databaseURL: "https://fireandrzej-7133a.firebaseio.com",
+    projectId: "fireandrzej-7133a",
+    storageBucket: "fireandrzej-7133a.appspot.com",
+    messagingSenderId: "776364649498",
+    appId: "1:776364649498:web:87ef136c63645f7a5bb5a3",
+    measurementId: "G-RVH7NXM9XR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
