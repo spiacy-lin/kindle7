@@ -7,16 +7,24 @@ import {AngularFireAnalyticsModule, AngularFireAnalytics} from '@angular/fire/an
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {ReactiveFormsModule} from '@angular/forms';
 import {environment} from '../environments/environment';
+import {AngularFireAuthModule} from '@angular/fire/auth';
 
 import {UserComponent} from './user.component';
 import {routing} from './app.routing';
 import {UserFormComponent} from './user-form.component';
+import {LoginComponent} from './login.component';
+import {LoginService} from './login.service';
+import { SignupComponent } from './signup.component';
+import {AuthGuard} from './auth.guard';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    UserFormComponent
+    UserFormComponent,
+    LoginComponent,
+    SignupComponent
+    
   ],
   imports: [
     BrowserModule, 
@@ -24,9 +32,10 @@ import {UserFormComponent} from './user-form.component';
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
     ReactiveFormsModule,
-    routing
+    routing,
+    AngularFireAuthModule
   ],
-  providers: [],
+  providers: [LoginService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
